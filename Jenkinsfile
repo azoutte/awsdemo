@@ -4,6 +4,7 @@ pipeline {
     stage('Checkout') {
       steps {
         sh 'date'
+	sh 'echo hello'
       }
     }
   }
