@@ -5,7 +5,9 @@ pipeline {
       steps {
         sh 'date'
 	sh 'echo hello'
-	sh 'uptime'
+	sh 'env'
+	sh 'pwd'
+	sh 'ls -lR'
       }
     }
   }
