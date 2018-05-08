@@ -5,6 +5,7 @@ pipeline {
       steps {
         sh 'date'
 	sh 'echo hello'
+	sh 'uptime'
       }
     }
   }
