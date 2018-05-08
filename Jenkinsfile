@@ -8,7 +8,7 @@ pipeline {
 	sh 'env'
 	sh 'pwd'
 	sh 'ls -lR'
-	sh 'cloudformation.sh'
+	sh './cloudformation.sh'
       }
     }
   }

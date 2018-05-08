@@ -1,5 +1,9 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Description: VPC Network Stack
+Parameters:
+  SerialNumber: 
+    Type: String
+    Description: The epic seconds of the last update
 Metadata: {}
 Mappings: {}
 Conditions: {}
@@ -38,6 +42,9 @@ Resources:
         - Key: Name
           Value:
             Ref: AWS::StackName
+        - Key: SerialNumber
+          Value:
+            Ref: SerialNumber
 #  InternetGateway:
 #    Type: AWS::EC2::InternetGateway
 #    Properties:
